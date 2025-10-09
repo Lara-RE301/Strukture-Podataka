@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20954707-6114-42E1-B2B6-870ADAFC319F}|ZAD1\\ZAD1.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\kod_zd1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20954707-6114-42E1-B2B6-870ADAFC319F}|ZAD1\\ZAD1.vcxproj|solutionrelative:ZAD1\\kod_zd1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20954707-6114-42E1-B2B6-870ADAFC319F}|ZAD1\\ZAD1.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\Popis_studenti.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{20954707-6114-42E1-B2B6-870ADAFC319F}|ZAD1\\ZAD1.vcxproj|solutionrelative:ZAD1\\Popis_studenti.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zd1.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\kod_zd1.c",
+              "RelativeDocumentMoniker": "ZAD1\\kod_zd1.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\kod_zd1.c",
+              "RelativeToolTip": "ZAD1\\kod_zd1.c",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-09T12:51:32.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Popis_studenti.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\Popis_studenti.txt",
+              "RelativeDocumentMoniker": "ZAD1\\Popis_studenti.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD1\\ZAD1\\Popis_studenti.txt",
+              "RelativeToolTip": "ZAD1\\Popis_studenti.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-09T12:51:58.527Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

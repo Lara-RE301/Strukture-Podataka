@@ -21,6 +21,7 @@ int addTotheEnd(Position);
 Position FindlastName(char* lastName, Position); 
 Position FindPreviouslastName(char* lastName, Position); 
 int removeFromtheList(char* lastName, Position); 
+int DeleteList(Position);
 
 int main() {
 	Person Head = { .name = "", .last_name = "", .birth_year = 0, .Next = NULL }; //postavljanje prvi element HEAD na "nulu", koji se nece ispisati
@@ -65,6 +66,7 @@ int main() {
 	}
 
 	Printlist(Head.Next);
+	DeleteList(&Head);
 	return 0;
 }
 
@@ -82,9 +84,9 @@ int addTotheBeginning(Position p) {
 			printf("Greska pri alociranje memoriju");
 			return EXIT_FAILURE;
 		}
-		printf("Ime i prezime: "); //unos ime, prezime i godinu rodenje
+		printf("\nIme i prezime: "); //unos ime, prezime i godinu rodenje
 		scanf("%s %s", q->name, q->last_name);
-		printf("Godinu rodenje: ");
+		printf("\nGodinu rodenje: ");
 		scanf("%d", &q->birth_year);
 
 		q->Next = p->Next; //povezivanje elementi iz liste korisceni pokazivaci
@@ -97,7 +99,7 @@ int Printlist(Position p) {
 	printf("\n Uneseni ljudi u listu:\n");
 	printf("IME PRETIME GODINU RODENJE\n");
 	while (p != NULL) { //while petlja za ispis elementi iz liste
-		printf("%s %s %d", p->name, p->last_name, p->birth_year);
+		printf("\n%s %s %d", p->name, p->last_name, p->birth_year);
 		puts("");
 		p = p->Next; //prelazak na sljedeci element iz liste
 	}
@@ -137,4 +139,16 @@ int removeFromtheList(char* lastName, Position p) {
 	Previous->Next = temp->Next;
 	free(temp);
 	return 1;
+}
+
+int DeleteList(Position p) {
+	Position Current = p;
+	Position temp = 0;
+
+	while (Current != NULL) {
+		temp = Current->Next;
+		free(Current);
+		Current = temp;
+	}
+	return 0;
 }

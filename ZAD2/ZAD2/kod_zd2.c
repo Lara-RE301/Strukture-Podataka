@@ -1,5 +1,5 @@
-/*Definirati strukturu osoba(ime, prezime, godina roğenja) i napisati program koji : A.dinamièki dodaje novi element na poèetak liste,
-B.ispisuje listu,C.dinamièki dodaje novi element na kraj liste,D.pronalazi element u listi(po prezimenu),E.briše odreğeni element iz liste,
+/*Definirati strukturu osoba(ime, prezime, godina roÃ°enja) i napisati program koji : A.dinamiÃ¨ki dodaje novi element na poÃ¨etak liste,
+B.ispisuje listu,C.dinamiÃ¨ki dodaje novi element na kraj liste,D.pronalazi element u listi(po prezimenu),E.briÅ¡e odreÃ°eni element iz liste,
 U zadatku se ne smiju koristiti globalne varijable.*/
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -107,11 +107,11 @@ int Printlist(Position p) {
 }
 
 int addTotheEnd(Position p) {
-		while (p->Next != NULL) { //petlja da se doğe do zadnjeg element listi
+		while (p->Next != NULL) { //petlja da se doÃ°e do zadnjeg element listi
 		p = p->Next;
 		}
 
-	addTotheBeginning(p); //pozivan funkciju addTotheBeginning poslajuæi zadnji element u listi
+	addTotheBeginning(p); //pozivan funkciju addTotheBeginning poslajuÃ¦i zadnji element u listi
 	return 0;
 	}
 
@@ -145,7 +145,7 @@ int DeleteList(Position p) {
 	Position Current = p;
 	Position temp = 0;
 
-	while (Current != NULL) {
+	while (Current != NULL) { //petlja za isbrisanje listu, tj. oslobodi se memoriju u mallocu
 		temp = Current->Next;
 		free(Current);
 		Current = temp;

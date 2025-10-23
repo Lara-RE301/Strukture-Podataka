@@ -142,13 +142,11 @@ int removeFromtheList(char* lastName, Position p) {
 }
 
 int DeleteList(Position p) {
-	Position Current = p;
 	Position temp = 0;
-
-	while (Current != NULL) { //petlja za isbrisanje listu, tj. oslobodi se memoriju u mallocu
-		temp = Current->Next;
-		free(Current);
-		Current = temp;
+	while (p->Next != NULL) { //petlja za isbrisanje listu, tj. oslobodi se memoriju u mallocu
+		temp = p->Next;
+		p->Next = temp->Next;
+		free(temp);
 	}
 	return 0;
 }

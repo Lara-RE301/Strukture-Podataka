@@ -1,0 +1,321 @@
+/*Prethodnom zadatku dodati funkcije: A. dinamièki dodaje novi element iza odreðenog elementa,
+B. dinamièki dodaje novi element ispred odreðenog elementa, C. sortira listu po prezimenima osoba,
+D. upisuje listu u datoteku, E. èita listu iz datoteke.*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Person* Position; //pokazivac na strukturu
+typedef struct Person {
+	char name[20];
+	char last_name[20];
+	int birth_year;
+	Position Next; //pokazivac na strukturu da se moze uhvatiti sljedeci element
+}Person;
+
+int addTotheBeginning(Position); //deklaracija svi funkcije koje su u ovom kodu
+int Printlist(Position);
+int addTotheEnd(Position);
+Position FindlastName(char*, Position);
+Position FindPreviouslastName(char* lastName, Position);
+int removeFromtheList(char*, Position);
+int DeleteList(Position);
+int addAfterName(char*, Position);
+int addBeforeName(char*, Position);
+int OrganizeListbylastName(Position);
+int WriteListToFile(Position);
+int ReadListFromFile();
+
+int main() {
+	Person Head = { .name = "", .last_name = "", .birth_year = 0, .Next = NULL }; //postavljanje prvi element HEAD na "nulu", koji se nece ispisati
+	char answer[20];
+	char lastName[20];
+	int temp = 0;
+	Position personFound = NULL;
+
+	addTotheBeginning(&Head); //pozivanje funkcija unos prije prethodni element
+	printf("\n-----Lista nakon unosa na pocetku-----\n");
+	Printlist(Head.Next); //pozivanje funkcija za ispis
+
+	addTotheEnd(&Head); // pozivanje funkcija za unos na kraju liste
+	printf("\n-----Lista nakon unosa na kraju-----\n");
+	Printlist(Head.Next);
+
+	printf("\n Zelite li pronaci odredenu osobu? Ako da, unesite prezime. Ako ne, unesite NE: "); // if/else uvjeti da korisnik moze odluciti ako zeli ili ne pronaci osobu iz liste.
+	scanf("%s", answer);
+	if (strcmp(answer, "NE") == 0) {															//ako odgovori ne, pojavi se poruku da nije htio,
+		printf("\n Ne zelite nitko pronaci!");
+	}
+	else {
+		personFound = FindlastName(answer, &Head);											//ali ako unesi prezime, poziva se funkcija za pretragu koja vrati da je nasla ili nije nasla uneseni prezime
+		if (personFound == NULL) {
+			printf("\n Prezime koje ste unjeli nije u listi");
+		}
+		else
+			printf("\n Prezime koje ste unjeli, %s, se nalazi u listi na adresu %p", answer, personFound);
+	}
+
+	printf("\n Zelite li izbrisati netko iz liste? Ako da, unesite prezime. Ako ne, unesite NE: "); // if/else uvjeti ako korinik zeli izbrisati osobu iz liste
+	scanf("%s", answer);
+	if (strcmp(answer, "NE") == 0) {																//ako odgovor je ne, samo se pojavi poruka da nije htio
+		printf("\n Ne zelite nitko izbrisati iz liste!");
+	}
+	else {
+		temp = removeFromtheList(answer, &Head);													//ako unesni prezime, sali se u funkciji removeFromtheList
+		if (temp == EXIT_FAILURE) {																	//oviseci sto funkcija vraca, javit ce se greska ili da je uspjesno izbrisano
+			printf("\n Doslo do greske. Nije bilo moguce izbrisati osobu iz liste");
+		}
+		else {
+			printf("\n Uspjesno ste obrisali osobu iz liste ");
+			Printlist(Head.Next);
+		}
+	}
+	
+	printf("\n Zelite nadodati netko iza specificnu osobu? Odgovorite DA ili NE: "); //korisnik ima mogucnosti odabrati ako zeli nadodati netko specificno osobu
+	scanf("%s", answer);															//ako DA, imat ce mogucnosti unesti prezime kome zeli unjeti osobu ispred, 
+	if (strcmp(answer, "NE") == 0) {												//ako NE pojavi se poruku da nije htio i preskoci se tu funkciju
+		printf("\n Niste htjeli nitko nadodati!");									//ako unesi nesto treceg dobije poruku da nije unio vazeci odgovor
+	}
+	else if (strcmp(answer, "DA") == 0) {
+		printf("\Iza koju osobu zelite nadodati. Unesite njihov prezime: ");
+		scanf("%s", lastName);
+		addAfterName(lastName, &Head);
+	}
+	else printf("\n Niste unjeli vazeci odgovor");
+
+	printf("\n Zelite nadodati netko ispred specificnu osobu? Odgovorite DA ili NE: "); //ista logika od prethodna petlja samo je za nadodavanje ljudi iza specificnu osobu
+	scanf("%s", answer);
+	if (strcmp(answer, "NE") == 0) {
+		printf("\n Niste htjeli nitko nadodati!");
+	}
+	else if (strcmp(answer, "DA") == 0) {
+		printf("\Ispred koju osobu zelite nadodati. Unesite njihov prezime: ");
+		scanf("%s", lastName);
+		addBeforeName(lastName, &Head);
+		Printlist(Head.Next);
+	}
+	else printf("\n Niste unjeli vazeci odgovor");
+	
+	OrganizeListbylastName(&Head);
+	printf("\n-----Organizirana Lista:-----\n");
+	Printlist(Head.Next);
+
+	WriteListToFile(Head.Next);
+	ReadListFromFile();
+
+	DeleteList(&Head);
+	return 0;
+}
+
+int addTotheBeginning(Position p) {
+
+	int N = 0, i;
+	printf("\n Koliko ljudi zelite unjeti u listi? ");
+	scanf("%d", &N);
+
+	for (i = 0; i < N; i++) {  //petlja za unos u listi
+		//potrebno je da alociranje memoriju za q bude unutra petlje jer za svaku novu osobu stvorit ce se novi prostor u memoriji
+		Position q;
+		q = (Position)malloc(sizeof(Person));
+		if (q == NULL) {
+			printf("Greska pri alociranje memoriju");
+			return EXIT_FAILURE;
+		}
+		printf("\nIme i prezime: "); //unos ime, prezime i godinu rodenje
+		scanf("%s %s", q->name, q->last_name);
+		printf("Godinu rodenje: ");
+		scanf("%d", &q->birth_year);
+
+		q->Next = p->Next; //povezivanje elementi iz liste korisceni pokazivaci
+		p->Next = q;
+	}
+	return 0;
+}
+
+int Printlist(Position p) {
+	printf("\n Uneseni ljudi u listu:\n");
+	printf("IME PRETIME GODINU RODENJE\n");
+	while (p != NULL) { //while petlja za ispis elementi iz liste
+		printf("\n%s %s %d", p->name, p->last_name, p->birth_year);
+		puts("");
+		p = p->Next; //prelazak na sljedeci element iz liste
+	}
+	return 0;
+}
+
+int addTotheEnd(Position p) {
+	while (p->Next != NULL) { //petlja da se doðe do zadnjeg element listi
+		p = p->Next;
+	}
+
+	addTotheBeginning(p); //pozivan funkciju addTotheBeginning poslajuæi zadnji element u listi
+	return 0;
+}
+
+Position FindlastName(char* lastName, Position p) {
+
+	while (p != NULL && strcmp(p->last_name, lastName) != 0) {	//while petlja se vrti sve dok je p=NULL ili ako je se pronade poslan prezime
+		p = p->Next;
+	}
+	return p;
+}
+
+Position FindPreviouslastName(char* lastName, Position p) {
+
+	while (p->Next != NULL && strcmp(p->Next->last_name, lastName) != 0) { //while petlja pronaci koji je element prije od onaj koji smo poslali
+		p = p->Next;
+	}
+	return p;
+}
+
+int removeFromtheList(char* lastName, Position p) {
+
+	Position Previous = FindPreviouslastName(lastName, p); //alociranje memoriju za Previous i istovremeno poziva se funkcija za pretragu
+	if (Previous->Next == NULL) return EXIT_FAILURE;
+
+	Position temp = Previous->Next; //povezivanje prethodni element s element koji je nakon onaj koji zelimo izbrisati
+	Previous->Next = temp->Next;
+	free(temp);
+	return 0;
+}
+
+int addAfterName(char* lastName, Position p) { //funkcija prima pokazivac na unoseni prezime i pokazivac na Head
+	
+	Position q;
+	p = FindlastName(lastName, p);
+
+	if (p != NULL) {						//provjera ako je dobro alociranje memoriju za malloc
+		q = (Position)malloc(sizeof(Person));
+		if (q == NULL) {
+			printf("Greska pri alociranje memoriju");
+			return EXIT_FAILURE;
+		}
+	
+	printf("\n Unesite ime i prezime od osoba koji zelite nadodati: ");
+	scanf("%s %s", q->name, q->last_name);
+	printf("\n Unesite godinu rodenje:");
+	scanf("%d", &q->birth_year);
+
+	q->Next = p->Next;
+	p->Next = q;
+	}
+	return 0;
+}
+
+int addBeforeName(char* lastName, Position p) { //funkcija prima pokazivac na unoseni prezime i pokazivac na Head
+
+	Position q;
+	p = FindPreviouslastName(lastName, p); //pronadi se koji je prethodni prezime od poslanog
+
+	if (p != NULL) {						//provjera ako je dobro alociranje memoriju za malloc
+		q = (Position)malloc(sizeof(Person));
+		if (q == NULL) {
+			printf("Greska pri alociranje memoriju");
+			return EXIT_FAILURE;
+		}
+
+		printf("\n Unesite ime i prezime od osoba koji zelite nadodati: ");
+		scanf("%s %s", q->name, q->last_name);
+		printf("\n Unesite godinu rodenje:");
+		scanf("%d", &q->birth_year);
+
+		q->Next = p->Next;
+		p->Next = q;
+	}
+	return 0;
+}
+
+int OrganizeListbylastName(Position p_head) {
+	
+	if (p_head == NULL || p_head->Next == NULL) {	//provjera ako lista je prazna ili samo ima jedan element jer onda nije potrebno srediti
+		printf("\n Lista je prazna ili ima samo jedan element");
+		return EXIT_FAILURE;
+	}
+
+	Position p, q, temp=NULL; //temp je pomocnik pri zamjenu
+	Position sorted = NULL; 
+	int swapped; //varijabla za pracenje zamjena
+
+	do {
+		swapped = 0;
+		p = p_head; 
+		q = p->Next; //prvi pravi element       
+
+		while (q->Next != sorted) {
+
+			//Usporedi se prezimena od q i q->Next
+			if (strcmp(q->last_name, q->Next->last_name) > 0) {
+				//Ako je q->Next prije q onda se dogodi zamjena
+				temp = q->Next;
+				p->Next = temp;
+				q->Next = temp->Next;
+				temp->Next = q;
+
+				swapped = 1;
+			}
+			p = p->Next; //prolazak na sljedeci par
+			q = p->Next;
+		}
+		sorted = q; //postavljanje novu granicu sortiranje
+	} while (swapped);
+
+	return 0;
+}
+
+int WriteListToFile(Position p) {
+
+	FILE* fp = fopen("Lista_ljudi.txt", "w"); //poveziavnje pokazivac na datoteku, i provjera uspjesnosti otvaranje
+	if (fp == NULL) {
+		printf("\n Problem pri otvaranje datoteku!");
+		return EXIT_FAILURE;
+	}
+
+	Position current = p; //privemeni element za unos u datoteci
+	while (current != NULL) { //dok se ne dode do zadnje element ubacuje se ljudi
+		fprintf(fp, "%s %s %d\n", current->name, current->last_name, current->birth_year);
+		current = current->Next;
+	}
+	
+	fclose(fp);
+	return 0;
+}
+
+int ReadListFromFile() {
+
+	struct Person temp; //privremena structura za ucitavanje ljudi iz liste
+
+	FILE* fp = fopen("Lista_ljudi.txt", "r"); //poveziavnje pokazivac na datoteku, i provjera uspjesnosti otvaranje
+	if (fp == NULL) {
+		printf("\n Problem pri otvaranje datoteku!");
+		return EXIT_FAILURE;
+	}
+
+	printf("\n-----Sadrzaj liste-----\n");
+	printf("IME PRETIME GODINU RODENJE\n");
+	while (fscanf(fp, "%s %s %d", temp.name, temp.last_name, &temp.birth_year) == 3) { //ispisivanje svi ljudi iz liste, broj 3 jer se treba ispisati ime/prezime/godinu rodenje
+		printf("%s %s %d\n", temp.name, temp.last_name, temp.birth_year);
+		puts("");
+	}
+
+	if (ferror(fp)) {
+		printf("\n Doslo je do greske pri citanje datoteke"); //provjera ako doslo do greska iscitavanje datoteku
+		return EXIT_FAILURE;
+	}
+
+	fclose(fp);
+	return 0;
+}
+
+int DeleteList(Position p) {
+	Position temp=NULL;
+
+	while (p->Next != NULL) { //petlja za osloboditi elementi iz liste
+		temp = p->Next;
+		p->Next = temp->Next;
+		temp->Next = NULL;
+		free(temp);
+	}
+	printf("\n Lista je bila uspjesno izbrisana");
+	return 0;
+}

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C6A7EB3-9C0B-4DF3-A14E-3291B9BDD38D}|ZAD5\\ZAD5.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\kod_zd5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1C6A7EB3-9C0B-4DF3-A14E-3291B9BDD38D}|ZAD5\\ZAD5.vcxproj|solutionrelative:ZAD5\\kod_zd5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C6A7EB3-9C0B-4DF3-A14E-3291B9BDD38D}|ZAD5\\ZAD5.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\postfiks.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1C6A7EB3-9C0B-4DF3-A14E-3291B9BDD38D}|ZAD5\\ZAD5.vcxproj|solutionrelative:ZAD5\\postfiks.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "postfiks.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\postfiks.txt",
+              "RelativeDocumentMoniker": "ZAD5\\postfiks.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\postfiks.txt",
+              "RelativeToolTip": "ZAD5\\postfiks.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-02T20:49:44.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zd5.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\kod_zd5.c",
+              "RelativeDocumentMoniker": "ZAD5\\kod_zd5.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD5\\ZAD5\\kod_zd5.c",
+              "RelativeToolTip": "ZAD5\\kod_zd5.c",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-30T18:28:01.865Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

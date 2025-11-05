@@ -1,0 +1,4 @@
+﻿  kod_zd5.c
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD5\ZAD5\kod_zd5.c(105,11): warning C4133: 'função': tipos incompatíveis - de 'FILE *' para 'const char *const '
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD5\ZAD5\kod_zd5.c(109,11): warning C4133: 'função': tipos incompatíveis - de 'FILE *' para 'const char *const '
+  ZAD5.vcxproj -> C:\Users\larin\Desktop\Strucktura Podataka\ZAD5\x64\Debug\ZAD5.exe

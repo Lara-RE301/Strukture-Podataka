@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\kod_zad6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\kod_zad6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racuni.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racuni.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-01-30.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-01-30.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\SortedReceipts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\SortedReceipts.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-12-23.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-12-23.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-11-09.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-11-09.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-09-11.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-09-11.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-06-27.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-06-27.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-02-07.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED60059F-FCD1-4749-AFE6-89F32B75FF3E}|ZAD6\\ZAD6.vcxproj|solutionrelative:ZAD6\\racun2025-02-07.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "racun2025-02-07.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-02-07.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-02-07.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-02-07.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-02-07.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T21:24:17.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "racun2025-11-09.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-11-09.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-11-09.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-11-09.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-11-09.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T21:24:53.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "racun2025-09-11.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-09-11.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-09-11.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-09-11.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-09-11.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T21:22:52.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SortedReceipts.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.c",
+              "RelativeDocumentMoniker": "ZAD6\\SortedReceipts.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.c",
+              "RelativeToolTip": "ZAD6\\SortedReceipts.c",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-02T17:49:28.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SortedReceipts.h",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.h",
+              "RelativeDocumentMoniker": "ZAD6\\SortedReceipts.h",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\SortedReceipts.h",
+              "RelativeToolTip": "ZAD6\\SortedReceipts.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-02T17:29:50.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "racun2025-12-23.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-12-23.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-12-23.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-12-23.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-12-23.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T17:10:33.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "racun2025-06-27.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-06-27.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-06-27.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-06-27.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-06-27.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T17:10:33.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "racun2025-01-30.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-01-30.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racun2025-01-30.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racun2025-01-30.txt",
+              "RelativeToolTip": "ZAD6\\racun2025-01-30.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T17:10:33.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "racuni.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racuni.txt",
+              "RelativeDocumentMoniker": "ZAD6\\racuni.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\racuni.txt",
+              "RelativeToolTip": "ZAD6\\racuni.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-01T19:59:17.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zad6.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\kod_zad6.c",
+              "RelativeDocumentMoniker": "ZAD6\\kod_zad6.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD6\\ZAD6\\kod_zad6.c",
+              "RelativeToolTip": "ZAD6\\kod_zad6.c",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAL0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-01T11:28:31.819Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

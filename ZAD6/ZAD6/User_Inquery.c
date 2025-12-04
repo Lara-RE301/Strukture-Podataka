@@ -9,7 +9,6 @@ int UserInquery(ReceiptPosition head) {
 	char artical[50];
 	char beginning[12], ending[12];
 	double total_quantity = 0.0, total_price = 0.0;
-	Dates start, end;
 
 	printf("\n----User Inquery----\n");
 	printf("What artical you want to check? ");
@@ -19,24 +18,20 @@ int UserInquery(ReceiptPosition head) {
 	printf("\n Enter which date to start the search (YYYY-MM-DD): ");
 	if (fgets(beginning, 12, stdin) == NULL) { return EXIT_FAILURE; }
 
+	if (strchr(beginning, '\n') == NULL) { return EXIT_FAILURE; }
 	beginning[strcspn(beginning, "\n")] = 0;
-	if (analyzedDates(beginning, &start) != 0) {
-		printf("\nError: The format is not correct"); return EXIT_FAILURE;
-	}
 
 	printf("\n Enter which date to end the search (YYYY-MM-DD): ");
 	if (fgets(ending, 12, stdin) == NULL) { return EXIT_FAILURE; }
+	if (strchr(ending, '\n') == NULL) { return EXIT_FAILURE; }
 	ending[strcspn(ending, "\n")] = 0;
-	if (analyzedDates(ending, &end) != EXIT_SUCCESS) {
-		printf("\nError: The format is not correct"); return EXIT_FAILURE;
-	}
 
 	while (q != NULL) {
-		if (compareDates(&q->analyzedDates, &start) >= 0 && compareDates(&q->analyzedDates, &end) <= 0) {
+		if (strcmp(q->recipt_name, beginning) >= 0 && strcmp(q->recipt_name, ending) <= 0) { //usporeduje unoseni pocetak i kraj pretraga
 			ArticalsPosition p = q->headArtical->Next;
 			while (p != NULL) {
 				if (strcmp(p->name, artical) == 0) {
-					total_quantity += p->quantity;
+					total_quantity += p->quantity; //racun cijena i kolicina
 					total_price += (p->quantity * p->price);
 				}
 				p = p->Next;

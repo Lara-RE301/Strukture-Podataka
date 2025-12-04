@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArticalSpending.c" />
     <ClCompile Include="DeleteLists.c" />
     <ClCompile Include="kod_zad6.c" />
     <ClCompile Include="SortedReceipts.c" />

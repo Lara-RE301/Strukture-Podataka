@@ -30,18 +30,18 @@ int main() {
 int ReadFile(ReceiptPosition head) {
 	
 	char filename[MAX_LENGHT];
-	FILE* fp = fopen("racuni.txt", "r");
+	FILE* fp = fopen("racuni.txt", "r"); //otvaranje i provjera datoteke
 	if (fp == NULL) {
 		printf("Error: It was not possible to open the file");
 		return EXIT_FAILURE;
 	}
 
-	while (fgets(filename, MAX_LENGHT, fp)!=NULL) {
-		filename[strcspn(filename, "\n")] = 0;
-		ReceiptPosition newReceipt = readReceipt(filename, head);
+	while (fgets(filename, MAX_LENGHT, fp)!=NULL) { //iscita se ime racuni iz datoteke
+		filename[strcspn(filename, "\n")] = 0; //makni se "\n" iz stringa
+		ReceiptPosition newReceipt = readReceipt(filename, head); //sali se ime racun na funkciju koja ce citati artikli iz racuna
 
-		if (newReceipt != NULL) {
-			SortedReceipts(head, newReceipt);
+		if (newReceipt != NULL) { //provjera ako nije prazan i onda se sali racun na sortiranje
+			SortedReceipts(head, newReceipt); //nakon sto se odradi readReceipt sali se head i taj novi receipt u funkciji (u header file SortedReceipts)
 		}
 	}
 	fclose(fp);
@@ -57,7 +57,7 @@ ReceiptPosition readReceipt(const char* filename, ReceiptPosition head) {
 		return NULL;
 	}
 
-	ReceiptPosition newReceipt = (ReceiptPosition)malloc(sizeof(Receipt));
+	ReceiptPosition newReceipt = (ReceiptPosition)malloc(sizeof(Receipt)); //alociranje memorija za racun i artikli
 	if (newReceipt == NULL) {
 		printf("Error: It was not possible to allocate the memory");
 		fclose(fp);
@@ -72,22 +72,16 @@ ReceiptPosition readReceipt(const char* filename, ReceiptPosition head) {
 		return NULL;
 	}
 
-	strcpy(HeadArticalNode->name, "");
+	strcpy(HeadArticalNode->name, ""); //inicijalizacija struktura za artikli
 	HeadArticalNode->quantity = 0.0;
 	HeadArticalNode->price = 0.0;
 	HeadArticalNode->Next = NULL;
 	newReceipt->headArtical = HeadArticalNode;
 
-	if (fgets(buffer_date, MAX_LENGHT, fp) != NULL) {
+	if (fgets(buffer_date, MAX_LENGHT, fp) != NULL) { //buffer koji sacuva datum racun
 		buffer_date[strcspn(buffer_date, "\n")] = 0;
 	
-		strcpy(newReceipt->recipt_name, buffer_date);
-
-		if (analyzedDates(newReceipt->recipt_name, &newReceipt->analyzedDates) != EXIT_SUCCESS) {
-			printf("Error: Invalid date format in file %s\n", filename);
-			free(HeadArticalNode); free(newReceipt); fclose(fp); 
-			return NULL;
-		}
+		strcpy(newReceipt->recipt_name, buffer_date); //prepisivanje informacija iz buffer u strukturi Receipts
 	}
 
 	else {
@@ -96,7 +90,7 @@ ReceiptPosition readReceipt(const char* filename, ReceiptPosition head) {
 		return NULL;
 	}
 
-	if (ReadArticals(fp, newReceipt, filename) != EXIT_SUCCESS) {
+	if (ReadArticals(fp, newReceipt, filename) != EXIT_SUCCESS) { //pokazivac na file, struktura racun i njegov ime
 		fclose(fp);
 		return NULL;
 	}
@@ -111,7 +105,7 @@ int ReadArticals(FILE* fp, ReceiptPosition newReceipt, const char* filename) {
 
 	if (fp == NULL || newReceipt == NULL) { return EXIT_FAILURE; }
 
-	while (fgets(buffer, MAX_LENGHT, fp) != NULL) {
+	while (fgets(buffer, MAX_LENGHT, fp) != NULL) { //provjera i unos u buffer
 		buffer[strcspn(buffer, "\n")] = 0;
 
 		ArticalsPosition newArtical = (ArticalsPosition)malloc(sizeof(Articals));
@@ -121,15 +115,15 @@ int ReadArticals(FILE* fp, ReceiptPosition newReceipt, const char* filename) {
 		}
 		newArtical->Next = NULL;
 
-		elements = sscanf(buffer, "%[^,], %lf, %lf", name_buffer, &quantity, &price);
+		elements = sscanf(buffer, "%[^,], %lf, %lf", name_buffer, &quantity, &price); //isictavanje elementi iz racun u name_buffer i varijabli
 		if (elements == 3) {
 			name_buffer[strcspn(name_buffer, "\n")] = 0;
 
-			strcpy(newArtical->name, name_buffer);
+			strcpy(newArtical->name, name_buffer); //iz buffer prebacuje se u strukturi
 			newArtical->quantity= quantity;
 			newArtical->price = price;
 
-			SortArticals(newReceipt->headArtical, newArtical);
+			SortArticals(newReceipt->headArtical, newArtical); //sali se da se artikli poredaju po ime
 		}
 		else {
 			printf("Error: Invalid information");
@@ -145,7 +139,7 @@ int SortArticals(ArticalsPosition head, ArticalsPosition newArtical) {
 
 	ArticalsPosition q = head;
 
-	while (q->Next != NULL && strcmp(newArtical->name, q->Next->name) > 0) {
+	while (q->Next != NULL && strcmp(newArtical->name, q->Next->name) > 0) { //sortiranje artikli po ime
 		q = q->Next;
 	}
 	newArtical->Next = q->Next;

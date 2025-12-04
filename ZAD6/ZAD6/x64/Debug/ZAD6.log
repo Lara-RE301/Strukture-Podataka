@@ -1,2 +1,7 @@
-﻿  User_Inquery.c
+﻿  DeleteLists.c
+  SortedReceipts.c
+  User_Inquery.c
+  kod_zad6.c
+  Gerando Código...
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\ZAD6\kod_zad6.c(51,41): warning C4028: o parâmetro formal 1 é diferente da declaração
   ZAD6.vcxproj -> C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\x64\Debug\ZAD6.exe

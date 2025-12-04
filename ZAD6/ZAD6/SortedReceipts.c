@@ -4,25 +4,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int analyzedDates(const char* receipt_name, Dates* date) {
-	if (sscanf(receipt_name, "%d-%d-%d", &date->year, &date->month, &date->day) == 3) { return EXIT_SUCCESS; }
-	else { return EXIT_FAILURE; }
-}
-
-int compareDates(const Dates* d1, const Dates* d2) {
-	if (d1->year != d2->year) { return d1->year - d2->year; }
-	if (d1->month != d2->month) { return d1->month - d2->month; }
-	return d1->day - d2->day;
-}
-
-int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt) {
+int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt) { //funkcija za sortiranje po datum
 
 	ReceiptPosition q=head;
 	if (head == NULL || newReceipt == NULL) {
 		return EXIT_FAILURE;
 	}
 
-	while (q->Next != NULL && compareDates(&newReceipt->analyzedDates, &q->Next->analyzedDates)>0) {
+	while (q->Next != NULL && strcmp(newReceipt->recipt_name, q->Next->recipt_name) > 0) {
 		q = q->Next;
 	}
 
@@ -32,7 +21,7 @@ int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt) {
 	return EXIT_SUCCESS;
 }
 
-int PrintSortedReceipts(ReceiptPosition head) {
+int PrintSortedReceipts(ReceiptPosition head) { //ispisivanje sortirani racuni
 	ReceiptPosition p = head->Next;
 	int i = 1;
 	printf("\n----Sorted receipts----\n");

@@ -27,4 +27,5 @@ typedef struct Receipt {
 int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt);
 int analyzedDates(const char* receipt_name, Dates* date);
 int compareDates(const Dates* d1, const Dates* d2);
+int PrintSortedReceipts(ReceiptPosition head);
 #endif

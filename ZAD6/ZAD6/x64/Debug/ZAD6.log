@@ -1,5 +1,2 @@
-﻿  kod_zad6.c
-C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\ZAD6\kod_zad6.c(52,41): warning C4028: o parâmetro formal 1 é diferente da declaração
-C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\ZAD6\kod_zad6.c(83,16): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
-C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\ZAD6\kod_zad6.c(141,17): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
+﻿  User_Inquery.c
   ZAD6.vcxproj -> C:\Users\larin\Desktop\Strucktura Podataka\ZAD6\x64\Debug\ZAD6.exe

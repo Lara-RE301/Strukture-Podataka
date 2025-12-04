@@ -12,7 +12,7 @@ int analyzedDates(const char* receipt_name, Dates* date) {
 int compareDates(const Dates* d1, const Dates* d2) {
 	if (d1->year != d2->year) { return d1->year - d2->year; }
 	if (d1->month != d2->month) { return d1->month - d2->month; }
-	else { return d1->day - d2->day; }
+	return d1->day - d2->day;
 }
 
 int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt) {
@@ -29,5 +29,18 @@ int SortedReceipts(ReceiptPosition head, ReceiptPosition newReceipt) {
 	newReceipt->Next = q->Next;
 	q->Next = newReceipt;
 
+	return EXIT_SUCCESS;
+}
+
+int PrintSortedReceipts(ReceiptPosition head) {
+	ReceiptPosition p = head->Next;
+	int i = 1;
+	printf("\n----Sorted receipts----\n");
+	while (p != NULL) {
+		printf("     (%d)%s \n", i, p->recipt_name);
+		p = p->Next;
+		i++;
+	}
+	puts("");
 	return EXIT_SUCCESS;
 }

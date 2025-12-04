@@ -5,26 +5,25 @@ artikala sortiranu po nazivu artikla. Nakon toga potrebno je omoguæiti upit koji
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include "SortedReceipts.h"
-
+#include "DeleteLists.h"
+#include "User_Inquery.h"
 #define MAX_LENGHT 50
 
 int ReadFile(ReceiptPosition head);
 ReceiptPosition readReceipt(char*, ReceiptPosition head);
 int ReadArticals(FILE* fp, ReceiptPosition newReceipt, const char* filename);
 int SortArticals(ArticalsPosition head, ArticalsPosition newArtical);
-int UserInquery(ReceiptPosition head);
-int DeleteArticalList(ArticalsPosition head);
-int DeleteReceiptList(ReceiptPosition head);
+
 
 int main() {
 	Receipt Head = { .recipt_name = "", .Next = NULL, .headArtical =NULL};
 	
 	ReadFile(&Head);
+	PrintSortedReceipts(&Head);
 	UserInquery(&Head);
 	DeleteReceiptList(&Head);
-
+	
 	return 0;
 }
 
@@ -80,34 +79,20 @@ ReceiptPosition readReceipt(const char* filename, ReceiptPosition head) {
 	newReceipt->headArtical = HeadArticalNode;
 
 	if (fgets(buffer_date, MAX_LENGHT, fp) != NULL) {
-		int lenght = strlen(buffer_date);
-		while (lenght > 0 && isspace((unsigned char)buffer_date[lenght - 1])) { lenght--; }
-		buffer_date[lenght]= '\0';
-
-		if (lenght!=10) {
-			printf("Error: Date does not have the correct lenght in file %s\n", filename);
-			free(HeadArticalNode);
-			free(newReceipt);
-			fclose(fp);
-			return NULL;
-		}
-
+		buffer_date[strcspn(buffer_date, "\n")] = 0;
+	
 		strcpy(newReceipt->recipt_name, buffer_date);
 
 		if (analyzedDates(newReceipt->recipt_name, &newReceipt->analyzedDates) != EXIT_SUCCESS) {
 			printf("Error: Invalid date format in file %s\n", filename);
-			free(HeadArticalNode); 
-			free(newReceipt); 
-			fclose(fp); 
+			free(HeadArticalNode); free(newReceipt); fclose(fp); 
 			return NULL;
 		}
 	}
 
 	else {
 		printf("Error: It was not possible to read date from file");
-		free(HeadArticalNode);
-		free(newReceipt);
-		fclose(fp);
+		free(HeadArticalNode); free(newReceipt); fclose(fp);
 		return NULL;
 	}
 
@@ -124,7 +109,7 @@ int ReadArticals(FILE* fp, ReceiptPosition newReceipt, const char* filename) {
 	char name_buffer[MAX_LENGHT];
 	double elements = 0, price, quantity;
 
-	if (fp == NULL || newReceipt == NULL) return EXIT_FAILURE;
+	if (fp == NULL || newReceipt == NULL) { return EXIT_FAILURE; }
 
 	while (fgets(buffer, MAX_LENGHT, fp) != NULL) {
 		buffer[strcspn(buffer, "\n")] = 0;
@@ -138,11 +123,7 @@ int ReadArticals(FILE* fp, ReceiptPosition newReceipt, const char* filename) {
 
 		elements = sscanf(buffer, "%[^,], %lf, %lf", name_buffer, &quantity, &price);
 		if (elements == 3) {
-			int lenght = strlen(name_buffer);
-			while (lenght > 0 && isspace((unsigned char)name_buffer[lenght - 1]))
-			{
-				name_buffer[--lenght] = '\0';
-			}
+			name_buffer[strcspn(name_buffer, "\n")] = 0;
 
 			strcpy(newArtical->name, name_buffer);
 			newArtical->quantity= quantity;
@@ -170,82 +151,5 @@ int SortArticals(ArticalsPosition head, ArticalsPosition newArtical) {
 	newArtical->Next = q->Next;
 	q->Next = newArtical;
 
-	return EXIT_SUCCESS;
-}
-
-int UserInquery(ReceiptPosition head) {
-
-	ReceiptPosition q = head->Next;
-	char artical[MAX_LENGHT];
-	char beginning[12], ending[12];
-	double total_quantity = 0.0, total_price = 0.0;
-	Dates start, end;
-
-	printf("What artical you want to check? ");
-	if (fgets(artical, MAX_LENGHT, stdin) == NULL) { return EXIT_FAILURE; }
-	artical[strcspn(artical, "\n")] = 0;
-
-	printf("\n Enter which date to start the search (YYYY-MM-DD): ");
-	if (fgets(beginning, 12, stdin) == NULL) { return EXIT_FAILURE; }
-	
-	beginning[strcspn(beginning, "\n")] = 0;
-	if (analyzedDates(beginning, &start) != 0) { 
-		printf("\nError: The format is not correct"); return EXIT_FAILURE;
-	}
-
-	printf("\n Enter which date to end the search (YYYY-MM-DD): ");
-	if (fgets(ending, 12, stdin) == NULL) { return EXIT_FAILURE; }
-	ending[strcspn(ending, "\n")] = 0;
-	if (analyzedDates(ending, &end) != EXIT_SUCCESS) {
-		printf("\nError: The format is not correct"); return EXIT_FAILURE; 
-	}
-
-	while (q != NULL) {
-		if (compareDates(&q->analyzedDates, &start) >= 0 && compareDates(&q->analyzedDates, &end) <= 0) {
-			ArticalsPosition p = q->headArtical->Next;
-			while (p != NULL) {
-				if (strcmp(p->name, artical) == 0) {
-					total_quantity += p->quantity;
-					total_price += (p->quantity * p->price);
-				}
-				p = p->Next;
-			}
-		}
-		q = q->Next;
-	}
-
-	printf("\n----Choosen artikal %s and its results----\n", artical);
-	if (total_quantity > 0) {
-		printf("\n The amount bought: %.2lf\n", total_quantity);
-		printf("\n The total price: %.2lf\n", total_price);
-	}
-	else {
-		printf("The artikal was not bought in the entered time-space");
-	}
-	return EXIT_SUCCESS;
-}
-
-int DeleteArticalList(ArticalsPosition head) {
-	ArticalsPosition temp = NULL;
-
-	while (head->Next != NULL) { //petlja za osloboditi elementi iz liste
-		temp = head->Next;
-		head->Next = temp->Next;
-		temp->Next = NULL;
-		free(temp);
-	}
-	free(head);
-	return EXIT_SUCCESS;
-}
-int DeleteReceiptList(ReceiptPosition head) {
-	ReceiptPosition temp = NULL;
-
-	while (head->Next != NULL) { //petlja za osloboditi elementi iz liste
-		temp = head->Next;
-		head->Next = temp->Next;
-		if (temp->headArtical != NULL) { DeleteArticalList(temp->headArtical); }
-		temp->Next = NULL;
-		free(temp);
-	}
 	return EXIT_SUCCESS;
 }

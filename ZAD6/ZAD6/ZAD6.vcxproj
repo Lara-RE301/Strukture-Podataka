@@ -123,8 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeleteLists.c" />
     <ClCompile Include="kod_zad6.c" />
     <ClCompile Include="SortedReceipts.c" />
+    <ClCompile Include="User_Inquery.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="racun2025-01-30.txt" />
@@ -136,7 +138,9 @@
     <Text Include="racuni.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DeleteLists.h" />
     <ClInclude Include="SortedReceipts.h" />
+    <ClInclude Include="User_Inquery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

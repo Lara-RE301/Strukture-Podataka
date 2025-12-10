@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\kod_zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|solutionrelative:ZAD7\\kod_zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|solutionrelative:ZAD7\\Structures.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|solutionrelative:ZAD7\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|solutionrelative:ZAD7\\Push\u0026Pop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{91EBB535-5B5E-497E-8240-D5EA42E2A4AA}|ZAD7\\ZAD7.vcxproj|solutionrelative:ZAD7\\Push\u0026Pop.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Structures.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.c",
+              "RelativeDocumentMoniker": "ZAD7\\Structures.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.c",
+              "RelativeToolTip": "ZAD7\\Structures.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T21:32:18.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Push\u0026Pop.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.c",
+              "RelativeDocumentMoniker": "ZAD7\\Push\u0026Pop.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.c",
+              "RelativeToolTip": "ZAD7\\Push\u0026Pop.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T20:09:43.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Push\u0026Pop.h",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "RelativeDocumentMoniker": "ZAD7\\Push\u0026Pop.h",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "RelativeToolTip": "ZAD7\\Push\u0026Pop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-09T20:08:19.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Structures.h",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.h",
+              "RelativeDocumentMoniker": "ZAD7\\Structures.h",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Structures.h",
+              "RelativeToolTip": "ZAD7\\Structures.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-09T11:20:58.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zad7.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\kod_zad7.c",
+              "RelativeDocumentMoniker": "ZAD7\\kod_zad7.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\kod_zad7.c",
+              "RelativeToolTip": "ZAD7\\kod_zad7.c",
+              "ViewState": "AgIAAIEAAAAAAAAAAAASwJkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-05T13:17:06.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

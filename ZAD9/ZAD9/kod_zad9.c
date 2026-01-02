@@ -17,7 +17,7 @@ int HeadOfTheOperation(TreePosition Root);
 int ReplaceElement(TreePosition Root);
 int DeleteTree(TreePosition Root);
 int InOrder(TreePosition Root);
-int PrintInFile(TreePosition Root);
+int PrintInFile(TreePosition Root, FILE* fp);
 TreePosition GenerateRandomTree();
 
 int main() {
@@ -30,6 +30,12 @@ int main() {
 }
 int HeadOfTheOperation(TreePosition Root) {
 
+	FILE* fp = fopen("Trees.txt", "w");
+	if (fp == NULL) {
+		printf("Error: It was not possible to open the file");
+		return EXIT_FAILURE;
+	}
+
 	int value[10] = { 2, 5, 7, 8, 11, 1, 4, 2, 3, 7 };
 
 	for (int i = 0; i < 10; i++) {
@@ -38,13 +44,14 @@ int HeadOfTheOperation(TreePosition Root) {
 
 	printf("\n----Inoder Tree 1----\n");
 	InOrder(Root);
-	PrintInFile(Root);
+	PrintInFile(Root, fp);
 
 	ReplaceElement(Root);
 
 	printf("\n----Inorder Tree 2----\n");
 	InOrder(Root);
-	PrintInFile(Root);
+	fprintf(fp, "\n");
+	PrintInFile(Root, fp);
 
 
 	DeleteTree(Root);
@@ -53,9 +60,11 @@ int HeadOfTheOperation(TreePosition Root) {
 	Root = GenerateRandomTree();
 	printf("\n----InOder Tree 3----\n");
 	InOrder(Root);
-	PrintInFile(Root);
+	fprintf(fp, "\n");
+	PrintInFile(Root, fp);
 
 	DeleteTree(Root);
+	fclose(fp);
 	return 0;
 }
 
@@ -118,17 +127,12 @@ int InOrder(TreePosition Root) {
 	return EXIT_SUCCESS;
 }
 
-int PrintInFile(TreePosition Root) {
-	FILE* fp = fopen("Trees.txt", "w");
-	if (fp == NULL) {
-		printf("Error: It was not possible to open the file");
-		return EXIT_FAILURE;
-	}
-
+int PrintInFile(TreePosition Root, FILE* fp) {
+	
 	if (Root == NULL) { return 0; }
-	PrintInFile(Root->Left);
+	PrintInFile(Root->Left, fp);
 	fprintf(fp, "%d ", Root->value);
-	PrintInFile(Root->Right);
+	PrintInFile(Root->Right, fp);
 
 	return 0;
 }

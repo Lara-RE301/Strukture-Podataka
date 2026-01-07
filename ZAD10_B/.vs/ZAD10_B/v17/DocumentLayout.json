@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\kod_zad10_b.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\kod_zad10_b.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\drzave.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\drzave.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\Brazil.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\Brazil.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\france.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\france.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\egipt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\egipt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\mexico.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BBB8F87-4AB6-481D-B155-D7882499F705}|ZAD10_B\\ZAD10_B.vcxproj|solutionrelative:ZAD10_B\\mexico.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Brazil.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\Brazil.txt",
+              "RelativeDocumentMoniker": "ZAD10_B\\Brazil.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\Brazil.txt",
+              "RelativeToolTip": "ZAD10_B\\Brazil.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:28:42.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "france.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\france.txt",
+              "RelativeDocumentMoniker": "ZAD10_B\\france.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\france.txt",
+              "RelativeToolTip": "ZAD10_B\\france.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:28:03.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "egipt.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\egipt.txt",
+              "RelativeDocumentMoniker": "ZAD10_B\\egipt.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\egipt.txt",
+              "RelativeToolTip": "ZAD10_B\\egipt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:26:50.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "drzave.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\drzave.txt",
+              "RelativeDocumentMoniker": "ZAD10_B\\drzave.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\drzave.txt",
+              "RelativeToolTip": "ZAD10_B\\drzave.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:26:25.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mexico.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\mexico.txt",
+              "RelativeDocumentMoniker": "ZAD10_B\\mexico.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\mexico.txt",
+              "RelativeToolTip": "ZAD10_B\\mexico.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:26:05.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zad10_b.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\kod_zad10_b.c",
+              "RelativeDocumentMoniker": "ZAD10_B\\kod_zad10_b.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10_B\\ZAD10_B\\kod_zad10_b.c",
+              "RelativeToolTip": "ZAD10_B\\kod_zad10_b.c",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-07T20:10:52.057Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Francuska francuska.txt
+Mexico mexico.txt
+Brasil Brazil.txt
+Egipt egipt.txt

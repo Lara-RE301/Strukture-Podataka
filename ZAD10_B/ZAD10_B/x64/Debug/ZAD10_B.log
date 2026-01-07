@@ -1,0 +1,4 @@
+﻿  kod_zad10_b.c
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD10_B\ZAD10_B\kod_zad10_b.c(44,7): warning C4133: '=': tipos incompatíveis - de 'PositionCity' para 'PositionCountry'
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD10_B\ZAD10_B\kod_zad10_b.c(214,1): warning C4716: 'PrintCountriesTree': deve retornar um valor
+  ZAD10_B.vcxproj -> C:\Users\larin\Desktop\Strucktura Podataka\ZAD10_B\x64\Debug\ZAD10_B.exe

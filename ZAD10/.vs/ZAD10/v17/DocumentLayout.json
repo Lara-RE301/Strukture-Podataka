@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\kod_zad10.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\francuska.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\francuska.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\drzave.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\drzave.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\egipt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\egipt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\mexico.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\mexico.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\brasil.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DFDF4BF4-60F5-4971-84FC-231BFE767624}|ZAD10\\ZAD10.vcxproj|solutionrelative:ZAD10\\brasil.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "egipt.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\egipt.txt",
+              "RelativeDocumentMoniker": "ZAD10\\egipt.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\egipt.txt",
+              "RelativeToolTip": "ZAD10\\egipt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T09:56:13.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "brasil.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\brasil.txt",
+              "RelativeDocumentMoniker": "ZAD10\\brasil.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\brasil.txt",
+              "RelativeToolTip": "ZAD10\\brasil.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T09:55:58.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mexico.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\mexico.txt",
+              "RelativeDocumentMoniker": "ZAD10\\mexico.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\mexico.txt",
+              "RelativeToolTip": "ZAD10\\mexico.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T09:55:47.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "francuska.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\francuska.txt",
+              "RelativeDocumentMoniker": "ZAD10\\francuska.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\francuska.txt",
+              "RelativeToolTip": "ZAD10\\francuska.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T09:55:22.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "drzave.txt",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\drzave.txt",
+              "RelativeDocumentMoniker": "ZAD10\\drzave.txt",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\drzave.txt",
+              "RelativeToolTip": "ZAD10\\drzave.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T09:49:13.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zad10.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c",
+              "RelativeDocumentMoniker": "ZAD10\\kod_zad10.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c",
+              "RelativeToolTip": "ZAD10\\kod_zad10.c",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAF0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-07T09:38:10.551Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

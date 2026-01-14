@@ -36,12 +36,12 @@ int main() {
 
 	if (ReadFromFile(table) == EXIT_SUCCESS) {
 		printf("\n----All countries and cities in the files----\n");
-		PrintCountries(table);
+		PrintHashTable(table);
 		printf("----User Inquery----\n");
 		UserInquery(table);
 	}
 
-	DeleteList(table);
+	DeleteTable(table);
 
 	return 0;
 }

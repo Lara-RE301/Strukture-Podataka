@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9374AFFB-71D0-4A39-BB29-C62957BCC7A9}|ZAD11\\ZAD11.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\kod_zad11.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9374AFFB-71D0-4A39-BB29-C62957BCC7A9}|ZAD11\\ZAD11.vcxproj|solutionrelative:ZAD11\\kod_zad11.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9374AFFB-71D0-4A39-BB29-C62957BCC7A9}|ZAD11\\ZAD11.vcxproj|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9374AFFB-71D0-4A39-BB29-C62957BCC7A9}|ZAD11\\ZAD11.vcxproj|solutionrelative:ZAD11\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Push\u0026Pop.h",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "RelativeDocumentMoniker": "..\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "RelativeToolTip": "..\\ZAD7\\ZAD7\\Push\u0026Pop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-14T09:30:51.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Structures.h",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\Structures.h",
+              "RelativeDocumentMoniker": "ZAD11\\Structures.h",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\Structures.h",
+              "RelativeToolTip": "ZAD11\\Structures.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-14T09:30:29.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "kod_zad10.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c",
+              "RelativeDocumentMoniker": "..\\ZAD10\\ZAD10\\kod_zad10.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD10\\ZAD10\\kod_zad10.c",
+              "RelativeToolTip": "..\\ZAD10\\ZAD10\\kod_zad10.c",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwPgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-14T09:10:07.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kod_zad11.c",
+              "DocumentMoniker": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\kod_zad11.c",
+              "RelativeDocumentMoniker": "ZAD11\\kod_zad11.c",
+              "ToolTip": "C:\\Users\\larin\\Desktop\\Strucktura Podataka\\ZAD11\\ZAD11\\kod_zad11.c",
+              "RelativeToolTip": "ZAD11\\kod_zad11.c",
+              "ViewState": "AgIAABMBAAAAAAAAAAAAACMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-08T16:26:49.796Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Cairo, 23074200
+Alexandria, 5362527 
+Hurghada, 214247
+Assua, 378578

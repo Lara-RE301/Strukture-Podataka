@@ -24,4 +24,11 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="drzave.txt" />
+    <Text Include="francuska.txt" />
+    <Text Include="brasil.txt" />
+    <Text Include="egipt.txt" />
+    <Text Include="mexico.txt" />
+  </ItemGroup>
 </Project>

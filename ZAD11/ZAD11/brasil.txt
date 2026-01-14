@@ -1,0 +1,5 @@
+Sao Paulo, 11904961
+Porto Alegre, 1332845
+Brasilia, 2817381
+Rio de Janeiro, 13923200
+Bahia, 14141626

@@ -1,0 +1,4 @@
+﻿  kod_zad11.c
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD11\ZAD11\kod_zad11.c(280,19): warning C4033: 'DeleteTable' deve retornar um valor
+C:\Users\larin\Desktop\Strucktura Podataka\ZAD11\ZAD11\kod_zad11.c(293,1): warning C4715: 'DeleteTable': nem todos os caminhos de controle retornam um valor
+  ZAD11.vcxproj -> C:\Users\larin\Desktop\Strucktura Podataka\ZAD11\x64\Debug\ZAD11.exe

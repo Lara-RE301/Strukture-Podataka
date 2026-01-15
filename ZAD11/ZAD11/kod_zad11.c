@@ -247,6 +247,7 @@ int PrintHashTable(HashTablePosition hash_table) {
 		while (current) {
 			printf("\n Country: %s", current->country_name);
 			PrintCities(current->Root);
+			current = current->Next;
 		}
 	}
 	return EXIT_SUCCESS;
